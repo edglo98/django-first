@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+</head>
+<body>
+    <h1>bienvenido {{usuario}}</h1>
+    <div>
+        {% for usuario in response %}
+            <p>Usuario: {{ usuario.nombre }}</p>
+            <a href="personas/detalle_persona/{{ usuario.id }}">ver detalle</a>
+        {% endfor %}
+    </div>
+</body>
+</html>
